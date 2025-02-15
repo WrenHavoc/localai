@@ -3,12 +3,12 @@
 # It was developed for debian and ubuntu based operating systems but could also work on mac and other unix or unix-like OSs if you know what you're doing
 
 # Install Ollama and curl
-sudo apt install curl
+sudo apt install curl -y
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Install python and Open WebUI
-sudo apt install python3
-sudo apt install python3.11-venv
+sudo apt install python3 -y
+sudo apt install python3.11-venv -y
 mkdir ~/open-webui-venv
 python3 -m venv ~/open-webui-venv
 ~/open-webui-venv/bin/pip3 install open-webui
