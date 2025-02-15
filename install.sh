@@ -1,13 +1,14 @@
 # This is just a simple installer for software that allows you to locally host AI
-# Also comes with a 
+# Also comes with a T-ui to manage your AI
 # It was developed for debian and ubuntu based operating systems but could also work on mac and other unix or unix-like OSs if you know what you're doing
 
-
-# Install Ollama
+# Install Ollama and curl
+sudo apt install curl
 curl -fsSL https://ollama.com/install.sh | sh
 
 # Install python and Open WebUI
 sudo apt install python3
+sudo apt install python3.11-venv
 mkdir ~/open-webui-venv
 python3 -m venv ~/open-webui-venv
 ~/open-webui-venv/bin/pip3 install open-webui
