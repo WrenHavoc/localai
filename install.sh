@@ -11,7 +11,7 @@ sudo apt install python3 -y
 sudo apt install python3.11-venv -y
 mkdir ~/open-webui-venv
 python3 -m venv ~/open-webui-venv
-~/open-webui-venv/bin/pip3 install open-webui
+~/open-webui-venv/bin/python pip install open-webui
 
 # copy files into bin
 sudo cp localai /bin
