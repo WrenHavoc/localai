@@ -9,9 +9,9 @@ curl -fsSL https://ollama.com/install.sh | sh
 # Install python and Open WebUI
 sudo apt install python3 -y
 sudo apt install python3.12-venv -y
-mkdir ~/open-webui-venv
-python3 -m venv ~/open-webui-venv
-~/open-webui-venv/bin/pip install open-webui
+mkdir ~/.open-webui-venv
+python3 -m venv ~/.open-webui-venv
+~/.open-webui-venv/bin/pip install open-webui
 
 # copy files into bin
 sudo cp localai /bin

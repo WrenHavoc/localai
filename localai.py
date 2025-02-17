@@ -8,6 +8,9 @@ def display_menu(menu):
 
 def ollama_start():
     os.system("ollama serve")
+    print("--------------------------------")
+    print("an error message may just mean that ollama is already running")
+    print("you can ignore it")
 
 def ollama_download():
     print("go to https://ollama.com/search in your browser to pick a model")
@@ -15,8 +18,8 @@ def ollama_download():
     os.system("ollama pull " + model)
 
 def open_webui():
-    os.system("gnome-terminal -- ~/open-webui-venv/bin/open-webui serve")
-    time.sleep(5)
+    os.system("gnome-terminal -- ~/.open-webui-venv/bin/open-webui serve")
+    time.sleep(10)
     os.system("firefox 127.0.0.1:8080")
 
 def done():
